@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Добавить товар
+{% endblock %}
+
+{% block page %}
+    <div class="row justify-content-center align-items-center">
+        <div class="col-12 bg bg-light border border-1 rounded-3">
+            <div class="container">
+                <p></p>
+                <p></p>
+                <h1 aligin="center">Создать новую запись:</h1>
+                <p></p>
+                <form method="post">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Введите название товара"><br>
+                    <textarea name="description" id="description" class="form-control" placeholder="Введите описание"></textarea><br>
+                    <input type="integer" name="price" id = price class="form-control" placeholder="Введите цену"><br>
+                    <input type="submit" class="btn btn-outline-dark" value="Отправить"><p></p>
+                </form>
+        </div>
+    </div>
+
+{% endblock %}
